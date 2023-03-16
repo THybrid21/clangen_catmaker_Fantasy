@@ -28,23 +28,22 @@ def sort_bidict(d: bidict, first_element=None):
     return temp
 
 
-pelt_options = bidict({"SingleColour": "Plain",  "Smoke": "Smoke", 'Backed': "Stripe Backed", 'Tabby': "Tabby",
+pelt_options = bidict({"SingleColour": "Plain",  "Smoke": "Smoke", 'Backed': "Stripe Backed", "Ghost": "Ghost Tabby", 
+                        "Doberman": "Doberman Point", "Skitty": "Skitty", "Rat": "Rat", "Wolf": "Wolf",'Tabby': "Tabby",
                        'Ticked': "Ticked Tabby", 'Mackerel': "Mackerel Tabby", 'Classic': "Classic Tabby",
-                       'Sokoke': 'Sokoke', 'Agouti': "Agouti", "Speckled": "Speckled Tabby", "Rosette": "Rosette",
-                       "Bengal": "Bengal", "Marbled": "Marbled Tabby", "Merle": "Merle", "Snowflake": "Snowflake", "Mottled": "Mottled",
-                       "Ghost": "Ghost Tabby", "Doberman": "Doberman Point", "Skitty": "Skitty", "Rat": "Rat", 
-                       "Wolf": "Wolf", "Skele": "Skeleton", "Stain": "Stain", "Charcoal": "Charcoal Tabby", "Hooded": "Hooded Tabby", 
+                       'Sokoke': 'Sokoke', 'Agouti': "Agouti", "Merle": "Merle", "Speckled": "Speckled Tabby", "Rosette": "Rosette",
+                       "Snowflake": "Snowflake", "Mottled": "Mottled", "Bengal": "Bengal", "Marbled": "Marbled Tabby", 
+                        "Skele": "Skeleton", "Stain": "Stain", "Charcoal": "Charcoal Tabby", "Hooded": "Hooded Tabby", 
                        "Ponit": "Bleach Point", "Spirit": "Ghostly Spirit"})
 pelt_options = sort_bidict(pelt_options)
 
-tortie_patches_patterns = bidict({"single": "Plain", "tabby": "Tabby", "bengal": "Bengal", "marbled": "Marbled Tabby",
-                                  "ticked": "Ticked Tabby", "rosette": "Rosette", "smoke": "Smoke",
-                                  "speckled": "Speckled Tabby", "agouti": "Agouti", "classic": "Classic Tabby",
-                                  "mackerel": "Mackerel Tabby", "sokoke": "Sokoke", "merle": "Merle", "ghost": "Ghost Tabby", 
-                                  "snowflake": "Snowflake", "mottled": "Mottled", "backed": "Stripe Backed", "doberman": "Doberman Point", 
-                                  "skitty": "Skitty", "rat": "Solid Rat", "wolf": "Wolf", "skele": "Skeleton", "stain": "Stain", 
-                                  "charcoal": "Charcoal Tabby", "hooded": "Charcoal Hooded Tabby", "ponit": "Bleach Point", 
-                                  "spirit": "Ghostly Spirit"})
+tortie_patches_patterns = bidict({"single": "Plain", "smoke": "Smoke", "backed": "Stripe Backed", "ghost": "Ghost Tabby",
+                                    "doberman": "Doberman", "skitty": "Skitty", "wolf": "Wolf", "tabby": "Tabby", 
+                                    "ticked": "Ticked", "mackerel": "Mackerel Tabby", "classic": "Classic", "sokoke": "Sokoke",
+                                    "agouti": "Agouti Ticked Tabby", "merle": "Merle", "speckled": "Speckled", "rosette": "Rosette",
+                                    "snowflake": "Snowflake", "mottled": "Mottled", "bengal": "Bengal", "marbled": "Marbled Tabby",
+                                    "skele": "Skeleton", "stain": "Stain", "charcoal": "Charcoal Tabby", "hooded": "Hooded Charcoal Tabby",
+                                    "ponit": "Bleach Point", "spirit": "Ghostly Spirit"})
 tortie_patches_patterns = sort_bidict(tortie_patches_patterns)
 
 tortie_patches_shapes = bidict({"ONE": "One", "TWO": "Two", "THREE": "Three", "FOUR": "Four",  'REDTAIL': "Redtail",
@@ -78,7 +77,7 @@ eye_colors = bidict( {'YELLOW': "Yellow", 'AMBER': "Amber", 'HAZEL': "Hazel", 'P
                       'OCEAN': "Ocean"})
 eye_colors = sort_bidict(eye_colors)
 
-tints = bidict({"none": "None", }) #, "pink": "Pink", "gray": "Gray", "red": "Red", "black": "Black", "orange": "Orange",
+tints = bidict({"none": "None"}) #, "pink": "Pink", "gray": "Gray", "red": "Red", "black": "Black", "orange": "Orange",
                 #"yellow": "Yellow", "purple": "Purple", "blue": "Blue"
 tints = sort_bidict(tints, 'none')
 

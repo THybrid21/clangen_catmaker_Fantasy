@@ -35,8 +35,6 @@ def randomize_pelt(cat):
         chosen_tortie_base = chosen_pelt
         if chosen_tortie_base in ["SingleColour"]:
             chosen_tortie_base = "Single"
-        if chosen_tortie_base in ["Wolf"]:
-            chosen_tortie_base = "Wolf"
         chosen_tortie_base = chosen_tortie_base.lower()
         chosen_pelt = "Tortie"
 
